@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inputs" style="flex-grow: 5;">
+      <h1>Morgage calculator</h1><br>
+      <form action="#" target="_blank" method="post">
+        <label for="amount">Morgage Amount</label><br><br>
+        <input type="text" id="amount">
+
+        <div class="term-interest">
+          <div class="morgage-term">
+            <label for="morgage-term">Morgage Term</label><br>
+            <input type="text" name="morgage-term" id="morgage-term">
+          </div>
+          <div class="interst-rate">
+            <label for="interest-rate">Interest Rate</label><br>
+            <input type="text" name="interest-rate" id="interest-rate">
+          </div>
+        </div>
+
+        <label for="">Morgage Type</label><br>
+        <div class="radio">
+          <input type="radio" id="repayment" name="morgage-type" >
+          <label for="repayment">Repayment</label><br>
+        </div>
+        <div class="radio">
+          <input type="radio" id="interest-only" name="morgage-type">
+          <label for="interest-only">Interest Only</label><br>
+        </div>
+
+        <input type="reset" value="Clear all" ><br>        
+        <input type="submit" name="submit" id="submit" value="Calculate payments">
+      </form>
+    </div>
+    <div class="results" style="flex-grow: 5;">
+      <img src="./assets/images/illustration-empty.svg" alt="mpesa" width="150px">
+      <h2>Results Shows here</h2>
+      <p>Complete the form and click "Calculate payments" to see what your repayment would be</p>
+    </div>
+  </div> 
+
+</body>
+</html>
